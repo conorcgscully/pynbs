@@ -16,7 +16,7 @@ RUN mkdir -p /workspace && \
 COPY environment.yml /tmp/environment.yml
 
 # Create environment
-RUN micromamba install -y -n nb_env -f /tmp/environment.yml && \
+RUN micromamba create -y -n nb_env -f /tmp/environment.yml && \
     micromamba clean --yes --all
 
 # Create your env
