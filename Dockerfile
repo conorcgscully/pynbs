@@ -17,7 +17,7 @@ COPY environment.yml /tmp/environment.yml
 
 # Create environment
 RUN micromamba install -y -n nb_env -f /tmp/environment.yml && \
-    micromamba clean --all --yes
+    micromamba clean --yes --all
 
 # Create your env
 # RUN micromamba create -y -n fepenv -c conda-forge \
