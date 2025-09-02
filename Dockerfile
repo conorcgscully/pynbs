@@ -26,7 +26,7 @@ WORKDIR /workspace
 
 
 # Drop privileges so writes happen as mambauser
-USER $MAMBA_USER
+# USER $MAMBA_USER
 COPY . /workspace
 
 CMD ["bash"]
